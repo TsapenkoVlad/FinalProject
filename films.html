@@ -19,7 +19,7 @@
                 </div>
                 <div class="logo-wrap2">
                     <label>
-                        <select>
+                        <select onchange="changeCity()" id="city">
                           <option value="0">Оберіть місто</option>
                           <option value="Київ">Київ</option>
                           <option value="Харків">Харків</option>
@@ -81,52 +81,52 @@
         <div class="sec-cont">
             <h1 class="title2" style="padding-top: 80px;">фільми</h1>
             <div class="razd"></div>
-            <div class="Films_container__G6Utq">
-                <a href="films/film0.html">
-                    <div class="Film_container__VfRIS">
+            <div  class="Films_container__G6Utq" >
+                <a onclick="changeFilms('title1')" href="films/film0.html">
+                    <div  class="Film_container__VfRIS">
                         <img alt="Місія неможлива: Розплата. Частина 1" src="img/missiya-nevpolnima-smertelnaya-rasplata-cast.webp" width="250" height="320" decoding="async" data-nimg="1" class="Film_image__o9ZJi" loading="lazy" style="color: transparent; object-fit: cover;">
-                        <div class="Film_title__KNz_n">Місія неможлива: Розплата. Частина 1</div>
+                        <div id="title1" class="Film_title__KNz_n">Місія неможлива: Розплата. Частина 1</div>
                     </div>
                 </a>
-                <a href="films/film1.html">
+                <a onclick="changeFilms('title2')" href="films/film1.html">
                     <div class="Film_container__VfRIS">
                         <img alt="Астрал 5" src="img/astral.webp" width="250" height="320" decoding="async" data-nimg="1" class="Film_image__o9ZJi" loading="lazy" style="color: transparent; object-fit: cover;">
-                        <div class="Film_title__KNz_n">Астрал 5</div>
+                        <div id="title2" class="Film_title__KNz_n">Астрал 5</div>
                     </div>
                 </a>
-                <a href="films/film2.html">
+                <a onclick="changeFilms('title3')" href="films/film2.html">
                     <div class="Film_container__VfRIS">
                         <img alt="Форсаж 10" src="img/forsaj.webp" width="250" height="320" decoding="async" data-nimg="1" class="Film_image__o9ZJi" loading="lazy" style="color: transparent; object-fit: cover;">
-                        <div class="Film_title__KNz_n">Форсаж 10</div>
+                        <div id="title3" class="Film_title__KNz_n">Форсаж 10</div>
                     </div>
                 </a>
-                <a href="films/film3.html">
+                <a onclick="changeFilms('title4')" href="films/film3.html">
                             <div class="Film_container__VfRIS">
                                 <img alt="Русалонька" src="img/rusalochska.webp" width="250" height="320" decoding="async" data-nimg="1" class="Film_image__o9ZJi" loading="lazy" style="color: transparent; object-fit: cover;">
-                                <div class="Film_title__KNz_n">Русалонька</div>
+                                <div id="title4" class="Film_title__KNz_n">Русалонька</div>
                             </div>
                         </a>
-                    <a href="films/film4.html">
+                    <a onclick="changeFilms('title5')" href="films/film4.html">
                         <div class="Film_container__VfRIS">
                             <img alt="Вартові Галактики 3" src="img/straji-galaktiki-3.webp" width="250" height="320" decoding="async" data-nimg="1" class="Film_image__o9ZJi" loading="lazy" style="color: transparent; object-fit: cover;">
-                            <div class="Film_title__KNz_n">Вартові Галактики 3</div>
+                            <div id="title5" class="Film_title__KNz_n">Вартові Галактики 3</div>
                         </div>
                     </a>
-                    <a href="films/film5.html"><div class="Film_container__VfRIS">
+                    <a onclick="changeFilms('title6')" href="films/film5.html"><div class="Film_container__VfRIS">
                         <img alt="Котяче життя. Велика пригода Муурр" src="img/cat.webp" width="250" height="320" decoding="async" data-nimg="1" class="Film_image__o9ZJi" loading="lazy" style="color: transparent; object-fit: cover;">
-                        <div class="Film_title__KNz_n">Котяче життя. Велика пригода Муурр</div>
+                        <div id="title6" class="Film_title__KNz_n">Котяче життя. Велика пригода Муурр</div>
                     </div>
                 </a>
-                <a href="films/film6.html">
+                <a onclick="changeFilms('title7')" href="films/film6.html">
                     <div class="Film_container__VfRIS">
                         <img alt="Персональний водій" src="img/personalnii-vod-i.webp" width="250" height="320" decoding="async" data-nimg="1" class="Film_image__o9ZJi" loading="lazy" style="color: transparent; object-fit: cover;">
-                        <div class="Film_title__KNz_n">Персональний водій</div>
+                        <div id="title7" class="Film_title__KNz_n">Персональний водій</div>
                     </div>
                 </a>
-                <a href="films/film7.html">
+                <a onclick="changeFilms('title8')" href="films/film7.html">
                     <div class="Film_container__VfRIS">
                         <img alt="Check-in у халепу" src="img/iml.webp" width="250" height="320" decoding="async" data-nimg="1" class="Film_image__o9ZJi" loading="lazy" style="color: transparent; object-fit: cover;">
-                        <div class="Film_title__KNz_n">Check-in у халепу</div>
+                        <div id="title8" class="Film_title__KNz_n">Check-in у халепу</div>
                     </div>
                 </a>
             </div>
@@ -136,5 +136,6 @@
             Примножуємо романтику, кохання та сюрпризи.
         </footer>
 <script src="js/menu.js"></script>		
+<script src="js/film.js"></script>
 </body>
 </html>

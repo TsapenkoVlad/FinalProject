@@ -193,9 +193,10 @@ body {
 }
 a {
 	cursor: pointer;
+  text-decoration: none;
 }
 a:hover {
-	text-decoration: none;
+	text-decoration-color: #2a27da;
 }
 
 .fnc {
@@ -924,6 +925,7 @@ a:hover {
 
 }
 .sec-cont {
+ 
     height: 100%;
 	height: 100%;
 }
