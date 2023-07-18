@@ -4,3 +4,7 @@ const changeSeats = (seat) => {
     }
     localStorage.setItem('seat', seat);
 }
+const openButton = document.getElementById('openButton');
+openButton.addEventListener('click', () => {
+    window.location.href = '/FinalProject/tickets/tickets.html';
+});
