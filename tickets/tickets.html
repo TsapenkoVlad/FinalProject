@@ -6,12 +6,21 @@
 </head>
 <body>
     <div class="ticket">
-        <p> <span id="data"><strong>Дата:</strong></span></p>
-        <p> <span id="time"></span><strong>Время:</strong></span></p>
-        <p> <span id="seat"></span><strong>Место:</strong></span></p>
-        <p> <span id="price"></span><strong>Цена:</strong></span></p>
+        <a class="qrcode" href="http://qrcoder.ru" target="_blank"><img src="http://qrcoder.ru/code/?http%3A%2F%2F127.0.0.1%3A5500%2FFinalProject%2Findex.html&4&0" width="164" height="164" border="0" title="QR код"></a>
+       <div class="ticket_info">
+    </div>
+    <div class="ticket_title">
+    <p> <span>Фiльм: <span id="films"></span></span></p>
+    <p> <span>Дата: <span id="date"></span></span></p>
+    <p> <span>Время:<span id="time"></span></p>
+    <p> <span>Место:<span id="seat"></span></p>
+    <p> <span>Мiсто:<span id="city"></span> </span></p>
+   </div> 
+       
     </div>
     <script src="tickets.js"></script>
+    <script src="qrcode.min.js"></script>
 </body>
 </html>
+
 
