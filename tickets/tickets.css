@@ -7,28 +7,47 @@ body {
     height: 100vh;
     margin: 0;
     background-image: url(../img/bg.jpg);
+   
   }
   .qrcode{
     display: flex;
     justify-content: center;
     
   }
-  .ticket__info{
-    margin-left: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center
-    
-  }
 
   .ticket {
+    margin-left: -40px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 50px;
-    width: 300px;
+    width: 400px;
+    height: 570px;
     padding-left: 50px;
+    text-decoration: none;
   }
   
-  
-  
+  .congr {
+    margin-top: -50px;
+    margin-left: -20px;
+  }
+
+  .congr_1 {
+    margin-left: -20px;
+  }
+
+  p {
+    margin-left: -20px;
+    
+    
+  }
+
+  .info {
+    color: grey;
+  }
+
+  .link {
+    margin-top: 5px;
+    color: gray;
+    cursor: pointer;
+  }

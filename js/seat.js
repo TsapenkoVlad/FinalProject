@@ -8,3 +8,7 @@ const openButton = document.getElementById('openButton');
 openButton.addEventListener('click', () => {
     window.location.href = '/FinalProject/tickets/tickets.html';
 });
+let seatTicket = localStorage.getItem('seat');
+let seat3 = document.querySelector('#places');
+seat3.innerHTML = seatTicket;
+

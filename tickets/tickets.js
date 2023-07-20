@@ -18,3 +18,7 @@ let filmsTicket = localStorage.getItem('films');
 let films2 = document.querySelector('#films');
 films2.innerHTML = filmsTicket;
 
+const backPage = document.querySelector('.link')
+backPage.addEventListener('click', () => {
+    window.location.href = '/FinalProject/index.html';
+});

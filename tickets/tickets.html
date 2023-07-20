@@ -6,17 +6,25 @@
 </head>
 <body>
     <div class="ticket">
+        <div class="congr"><h3>Электронный квиток!</h3></div>
+        <div class="congr_1">Вітаємо з вдалою покупкою.
+            <div onclick="" class="link">Повернуться до магазину.</div>
+        </div>
         <a class="qrcode" href="http://qrcoder.ru" target="_blank"><img src="http://qrcoder.ru/code/?http%3A%2F%2F127.0.0.1%3A5500%2FFinalProject%2Findex.html&4&0" width="164" height="164" border="0" title="QR код"></a>
        <div class="ticket_info">
+        <p>Номер замовлення: <strong>17867858</strong></p>
     </div>
     <div class="ticket_title">
-    <p> <span>Фiльм: <span id="films"></span></span></p>
-    <p> <span>Дата: <span id="date"></span></span></p>
-    <p> <span>Время:<span id="time"></span></p>
-    <p> <span>Место:<span id="seat"></span></p>
-    <p> <span>Мiсто:<span id="city"></span> </span></p>
+    <p> <span>Фiльм: <strong><span id="films"></span></strong> </span></p>
+    <p> <span>Дата: <strong><span id="date"></span></strong></span></p>
+    <p> <span>Час: <strong><span id="time"></span></strong></p>
+    <p> <span>Мiсце: <strong><span id="seat"></span></strong></p>
+    <p> <span>Мiсто: <strong><span id="city"></span></strong></span></p>
    </div> 
-       
+       <p class="info">Будь ласка, не втрачайте електронний квиток, без нього можуть виникнути проблеми. <br>
+    <p class="info">За правилами нашого платіжного агругатора, покупець завжди може робити повернення коштів у продавця.</p>
+    </p>
+    <p class="info">Інформація в електронному квитку надається постачальником послуг.</p>
     </div>
     <script src="tickets.js"></script>
     <script src="qrcode.min.js"></script>
