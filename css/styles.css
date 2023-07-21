@@ -2057,6 +2057,12 @@ footer {
     border-radius:4px;
     border:1px solid #29f
 }
+.Film_container__98tkX .Film_dateTime__kpgI2 .Film_dateTimeInner__73_xF .Film_dateContainer__AUgI7 .Film_date__VKJSo:active{
+    background-color:rgb(65, 142, 209);
+    color:#fff
+    
+
+}
 @media(max-width:1500px){
     .Film_container__98tkX .Film_dateTime__kpgI2 .Film_dateTimeInner__73_xF .Film_dateContainer__AUgI7 .Film_date__VKJSo{
         margin-top:20px;
