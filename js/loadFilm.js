@@ -1,39 +1,120 @@
 $(document).ready(function () {
-    getFilm();
-  });
-  
-  const getFilm = () => {
-    const params = new URLSearchParams(document.location.search);
-    const id = params.get("id");
-    const film = FILMS[id];
-    document.getElementById("title").innerText = film.title;
-    document.getElementById("release").innerText = film.release;
-    document.getElementById("duration").innerText = film.duration;
-    document.getElementById("country").innerText = film.country;
-    document.getElementById("description").innerText = film.description;
-    document.getElementById("actors").innerText = film.actors;
-    document.getElementById("genre").innerText = film.genre;
-    document.getElementById("img").src = film.img;
-  };
-  
-  const FILMS = [
-    {},
-    {
-      title: "Астрал 5",
-      release: "06.07.2023",
-      duration: "2 год. 10 хв.",
-      country: "США",
-      description: `Нова частина успішної хорор-франшизи "Астрал" на великих екранах!`,
-      actors: "Патрік Вілсон, Тай Сімпкінс",
-      genre: "жахи",
-      img: "../img/astral.webp",
-    },
-    { title: "Forsaz", description: "", time: "", actors: "", genre: "" },
-    { title: "Forsaz", description: "", time: "", actors: "", genre: "" },
-    { title: "Forsaz", description: "", time: "", actors: "", genre: "" },
-    { title: "Forsaz", description: "", time: "", actors: "", genre: "" },
-    { title: "Forsaz", description: "", time: "", actors: "", genre: "" },
-    { title: "Forsaz", description: "", time: "", actors: "", genre: "" },
-    { title: "Forsaz", description: "", time: "", actors: "", genre: "" },
-  ];
-  
+  getFilm();
+});
+
+const getFilm = () => {
+  const params = new URLSearchParams(document.location.search);
+  const id = params.get("id");
+  const film = FILMS[id];
+  document.getElementById("title").innerText = film.title;
+  document.getElementById("release").innerText = film.release;
+  document.getElementById("duration").innerText = film.duration;
+  document.getElementById("country").innerText = film.country;
+  document.getElementById("description").innerText = film.description;
+  document.getElementById("actors").innerText = film.actors;
+  document.getElementById("genre").innerText = film.genre;
+  document.getElementById("img").src = film.img;
+};
+
+const FILMS = [
+  {
+    title: "Місія неможлива: Розплата. Частина 1",
+    release: "12.07.2023",
+    duration: "2 год. 10 хв.",
+    country: "США",
+    description: `Фільм "Місія неможлива: Розплата. Частина перша" є неперевершеним
+    прикладом епічного бойовика, на який варто сходити в кінотеатр. Нові
+    пригоди агента Ітана Ханта відзначається надзвичайною якістю та
+    захоплюючим сюжетом. Режисер Крістофер Маккуоррі зміг створити
+    вражаючу і незабутню кіноподію, яка тримає у напрузі протягом всього
+    фільму.`,
+    actors:
+      "Том Круз, Хейлі Етвелл, Ребекка Фергюсон, Пом Клементьєв, Ванесса Кірбі",
+    genre: "трилер, бойовик, пригоди",
+    img: "../img/missiya-nevpolnima-smertelnaya-rasplata-cast.webp",
+  },
+  {
+    title: "Астрал 5",
+    release: "06.07.2023",
+    duration: "2 год. 10 хв.",
+    country: "США",
+    description: `Нова частина успішної хорор-франшизи "Астрал" на великих екранах!`,
+    actors: "Патрік Вілсон, Тай Сімпкінс",
+    genre: "жахи",
+    img: "../img/astral.webp",
+  },
+  {
+    title: "Форсаж Х",
+    release: "02.04.2022",
+    duration: "2 год. 10 хв.",
+    country: "США",
+    description: `Пристебніть паски безпеки та приготуйтеся до нового шаленого заїду від Домініка Торетто!
+
+    Цікаві факти про фільм "Форсаж Х":
+    - Фінальний фільм в основній серії.
+    
+    - Повинен був вийти в 2021 році, рівно через 20 років з моменту виходу першого фільму франшизи.
+    
+    - Ходять чутки про повернення Пола Вокера у фільм з використанням комп'ютерної графіки.
+    
+    - Вiн Дизель натякнув, що цей фільм можуть розділити на дві частини`,
+    actors:
+      "Він Дизель, Мішель Родрігес, Тайріз Гібсон, Лудакріс, Джордана Брюстер",
+    genre: "жахи",
+    img: "../img/forsaj.webp",
+  },
+  {
+    title: "Русалонька ",
+    release: "25.05.2023",
+    duration: "2 год. 15 хв.",
+    country: "США",
+    description: `Русалонька – це знайома кожному історія про Аріель, красиву та натхненну молоду русалку, яка прагне пригод. Наймолодша і найзухваліша з доньок короля Тритона, Аріель прагне дізнатись більше про світ над водою. Під час однієї з подорожей на поверхню вона закохується у принца Еріка.
+
+    Хоча русалкам заборонено спілкуватись із людьми, Аріель має йти за покликом серця. Тож вона укладає угоду зі злою морською відьмою, Урсулою, котра дає Аріель шанс з’ясувати, яке воно, життя на землі. Але це ставить під загрозу її власне життя та батькову корону.`,
+    actors:
+      "Голлі Бейлі, Давід Діґґз, Мелісса Маккарті, Хав’єр Бардем, Джона Гавер-Кінґ, Аквафіна, Джейкоб Трембле",
+    genre: "Сімейний, Фентезі, Пригоди",
+    img: "../img/rusalochska.webp",
+  },
+  {
+    title: "Вартові Галактики 3",
+    release: "25.05.2021",
+    duration: "2 год.",
+    country: "США",
+    description: `У "Вартових Галактики 3" від Marvel Studios наші улюблені герої виглядають трохи інакше. Пітер Квілл, все ще оговтуючись від втрати Ґамори, має знову об’єднати команду, щоб захистити всесвіт та одного з них. Якщо ця місія провалиться, це може стати кінцем Вартових, якими ми їх знаємо.`,
+    actors: "Кріс Претт, Карен Гіллан, Він Дизель, Пом Клементьєв, Зої Салдана",
+    genre: "фантастика, бойовик, пригоди",
+    img: "../img/straji-galaktiki-3.webp",
+  },
+  {
+    title: "Котяче життя. Велика пригода Муурр",
+    release: "25.05.2022",
+    duration: "1 год. 23 хв.",
+    country: "Франція, Швейцарія",
+    description: `Опис фільму:</div>Одного дня смугастика врятувала дівчинка і принесла додому. Тепер вона і Муурр - найкращі друзі, і на літні канікули разом вирушають за місто. Навколишні ліси сповнені пригод та цікавинок, тож не дивно, що, захопившись, кошеня з міста загубилось в дикій природі. Тепер він сам у лісі, де на кожному кроці чатує небезпека. Чи зможе він вибратись?
+    Муурр знає відповідь: він обов'язково будь-що повернеться додому! І шлях його буде сповнений неймовірних пригод, небезпек та дивовижних відкриттів.`,
+    actors: "Капюсін Сенсон-Фабресс",
+    genre: "пригоди, сімейний",
+    img: "../img/cat.webp",
+  },
+  {
+    title: "Персональний водій",
+    release: "15.06.2023",
+    duration: "1 год. 31 хв.",
+    country: "Франція, Бельгія",
+    description: `Одного разу таксист приїхав на виклик до вередливої бабці, яка забажала їхати через пів Парижа і безперестанку базікати до водія. Кого цікавлять чужі проблеми, коли своїх по горло: кредит в банку, робота за копійки! Але вперта клієнтка розповідає, що замовила цю поїздку, аби востаннє побачити місця своєї молодості. Вона відверто розповідає новому знайомому про свої молоді роки, перший поцілунок і почуття…`,
+    actors: "Лін Рено, Дені Бун, Еліс Ісаас, Крістоф Россігнон",
+    genre: "драма",
+    img: "../img/personalnii-vod-i.webp",
+  },
+  {
+    title: "Check-in у халепу",
+    release: "06.07.2023",
+    duration: "1 год. 32 хв.",
+    country: "Франція, Бельгія",
+    description: `Шалена комедія про чотирьох подруг, що вирушають у незабутню подорож! Коли ділова поїздка Обрі (Ешлі Парк) до Пекіну перетворилась на катастрофу, дівчина звертається по допомогу до своїх подруг: харизматичної та трохи дивної художниці Лоло (Шеррі Кола), яскравої зірки "мильних опер" Кет (номінантка на "Оскар" Стефані Сюй), та кузини на прізвисько Мертве Око (Сабріна Ву), яка схиблена на K-Pop. Їхній епічний досвід дружби, пізнання та дикої розпусти несподівано відкриє їм правду про любов та самих себе.`,
+    actors: "Ешлі Пак, Стефані Сюй, Девід Денман, Енні Мумоло",
+    genre: "комедія",
+    img: "../img/iml.webp",
+  },
+];
