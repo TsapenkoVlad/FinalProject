@@ -51,18 +51,10 @@ const setDate = () => {
 };
 
 const setDayOfWeek = () => {
-  const daysOfWeek = [
-    "воскресенье",
-    "понедельник",
-    "вторник",
-    "среда",
-    "четверг",
-    "пятница",
-    "суббота",
-  ];
-  for (let i = 1; i <= 7; i++) {
-    const targetDate = new Date(date.getTime()) + i;
-    const dayOfWeek = daysOfWeek[targetDate.getDay()];
-    document.getElementById(i.toString()).textContent = dayOfWeek;
+  const daysOfWeek = ["ПН", "ВТ", "СР", "ЧТ", "ПТ", "СБ", "ВС"];
+  for (let i = 0; i < 7; i++) {
+    const targetDate = new Date();
+    const dayOfWeek = daysOfWeek[(targetDate.getDay() + i - 1) % 7];
+    document.getElementById("0" + (i + 1).toString()).textContent = dayOfWeek;
   }
 };
