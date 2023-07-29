@@ -26,6 +26,9 @@ const changeTime = (id) => {
     localStorage.removeItem("time");
   }
   localStorage.setItem("time", id);
+  const timeButton = document.getElementById(id);
+  timeButton.style.backgroundColor = "white";
+  timeButton.style.color = "black";
 };
 
 const changeColor = (id) => {
