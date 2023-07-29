@@ -2,18 +2,27 @@ $(document).ready(function () {
   setDate();
   setDayOfWeek();
 });
+
 const changeDates = (id) => {
+  const dateButton = document.getElementById(id);
   let previousId = null;
+  if (
+    localStorage.getItem("previousId") !== null &&
+    localStorage.getItem("previousId").length > 0
+  ) {
+    previousId = localStorage.getItem("previousId");
+    localStorage.removeItem("previousId");
+  }
   if (
     localStorage.getItem("date") !== null &&
     localStorage.getItem("date").length > 0
   ) {
-    previousId = localStorage.getItem("date");
     localStorage.removeItem("date");
   }
   removeColor(previousId);
 
-  localStorage.setItem("date", id);
+  localStorage.setItem("date", dateButton.innerText);
+  localStorage.setItem("previousId", id);
 
   changeColor(id);
 };
@@ -46,10 +55,14 @@ const removeColor = (previousId) => {
 };
 
 const setDate = () => {
+  const targetDate = new Date();
+  let day = targetDate.getDate();
   for (let i = 1; i <= 7; i++) {
-    const targetDate = new Date();
-    const day = targetDate.getDate() + i - 1;
+    if (day > 31) {
+      day = 1;
+    }
     document.getElementById(i.toString()).textContent = day;
+    day++;
   }
 };
 
